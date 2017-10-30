@@ -16,6 +16,20 @@ Operation Objects使用了线程池，创建线程要快些
 
 ## Creating a Thread
 
+#### Using NSThread
+
+detachNewThreadSelector:toTarget:withObject:、创建NSThread并调用start方法
+
+当detached thread结束时，系统自动回收他的资源
+
+performSelector:onThread:withObject:waitUntilDone: 需要线程有runloop，执行后立即撤销
+
+#### Using POSIX Threads
+
+#### Using NSObject to Spawn a Thread
+
+#### Using POSIX Threads in a Cocoa Application
+
 ## Configuring Thread Attributes
 
 ## Writing Your Thread Entry Routine
