@@ -23,14 +23,18 @@ mode可自定义，利用mode可以过滤一些事件
 #### Input Sources
 
 * Port-Based Sources：内核触发
+
   * Cocoa：as is
 
   * Core Foundation：手动创建port和对应的run loop source
+
 * Custom Input Sources：其他线程手动触发，用Core Foundation的接口创建
 
 * Cocoa Perform Selector Sources：Cocoa的Custom Input Source，运行后从run loop删除。每一个run loop处理所有selector
 
 #### Timer Sources
+
+对于重复的timer，如果延迟触发的过程中经过了多个时间间隔，也只会触发一次
 
 #### Run Loop Observers
 
