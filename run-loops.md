@@ -4,7 +4,9 @@
 
 ## Anatomy of a Run Loop
 
+ ![](/assets/import.png)
 
+只能使用Core Foundation添加run-loop的观察者
 
 #### Run Loop Modes
 
