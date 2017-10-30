@@ -29,6 +29,10 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 大多数锁结合了Memory Barriers
 
+#### Conditions
+
+信号量的一种，和mutex lock的区别是，conditions同时可能允许多个线程执行
+
 ## Synchronization Costs and Performance
 
 ## Thread Safety and Signals
