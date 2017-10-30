@@ -12,6 +12,8 @@
 | Stack space | 主线程 1M，子线程512KB |
 | 创建 | 90微秒 |
 
+Operation Objects使用了线程池，创建线程要快些
+
 ## Creating a Thread
 
 ## Configuring Thread Attributes
