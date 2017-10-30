@@ -32,7 +32,7 @@ c接口，使用更方便
 
 #### Using NSObject to Spawn a Thread
 
-`performSelectorInBackground:withObject: `
+`performSelectorInBackground:withObject:`
 
 #### Using POSIX Threads in a Cocoa Application
 
@@ -41,6 +41,20 @@ c接口，使用更方便
 Cocoa的锁和条件对象是对POSIX相关对象的封装
 
 ## Configuring Thread Attributes
+
+#### Configuring the Stack Size of a Thread
+
+| Technology | Option |
+| :--- | :--- |
+| Cocoa | \[NSThread setStackSize:\] |
+| POSIX | pthread\_attr\_setstacksize =&gt; pthread\_attr\_t =&gt; pthread\_create |
+| Multiprocessing Services |  |
+
+#### Configuring Thread-Local Storage
+
+#### Setting the Detached State of a Thread
+
+#### Setting the Thread Priority
 
 ## Writing Your Thread Entry Routine
 
