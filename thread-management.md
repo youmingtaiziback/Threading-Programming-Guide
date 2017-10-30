@@ -92,5 +92,5 @@ ARC：autorelease pool被忽略；MRC：autorelease pool在入口函数最开始
 
 ## Terminating a Thread
 
-
+ Cocoa、POSIX和Multiprocessing Services提供了直接杀死线程的接口，但是不建议使用，这样做很可能导致内存泄漏
 
