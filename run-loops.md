@@ -130,7 +130,19 @@ run loop如果不添加timer或者input source，运行后会立即退出
 
 #### Thread Safety and Run Loop Objects
 
+Core Foundation：一般是线程安全的，但是还是推荐在线程内修改run loop
+
+Cocoa NSRunLoop：非线程安全
+
 ## Configuring Run Loop Sources
+
+#### Defining a Custom Input Source
+
+#### Configuring Timer Sources
+
+#### Configuring a Port-Based Input Source
+
+
 
 
 
