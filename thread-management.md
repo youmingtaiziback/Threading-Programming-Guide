@@ -52,7 +52,17 @@ Cocoa的锁和条件对象是对POSIX相关对象的封装
 
 #### Configuring Thread-Local Storage
 
+Cocoa: \[NSThread threadDictionary\]
+
+POSIX: pthread\_setspecific、pthread\_getspecific
+
 #### Setting the Detached State of a Thread
+
+Most high-level thread technologies create detached threads by default
+
+POSIX creates threads as joinable by default
+
+You can think of joinable threads as akin to child threads
 
 #### Setting the Thread Priority
 
