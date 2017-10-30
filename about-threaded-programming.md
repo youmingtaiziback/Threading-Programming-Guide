@@ -45,7 +45,29 @@ run loop监听事件源，事件源来了，系统唤醒线程，把事件分发
 
 #### Synchronization Tools
 
+Locks：使代码在任一时间最多只能被一个线程执行。最常见的是mutex lock，Cocoa提供来了几种mutex lock的变种
+
+conditions
+
+atomic operations：针对数据，硬件指令支持
+
 #### Inter-thread Communication
+
+线程共享进程空间
+
+Direct messaging
+
+Global variables, shared memory, and objects
+
+Conditions
+
+Run loop sources
+
+Ports and sockets
+
+Message queues（OS X only）
+
+Cocoa distributed objects（OS X only）
 
 ## Design Tips
 
