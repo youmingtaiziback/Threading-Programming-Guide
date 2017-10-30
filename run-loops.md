@@ -4,11 +4,13 @@
 
 ## Anatomy of a Run Loop
 
- ![](/assets/import.png)
+![](/assets/import.png)
 
 只能使用Core Foundation添加run-loop的观察者
 
 #### Run Loop Modes
+
+mode可自定义，利用mode可以过滤一些事件
 
 #### Input Sources
 
