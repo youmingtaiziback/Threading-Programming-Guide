@@ -12,15 +12,16 @@ OS X利用多核处理系统事件，app也可以通过线程利用多核
 
 ## Threading Terminology
 
-| Operation objects | 单独使用或者配合queue使用 |
+## Alternatives to Threads
+
+| Technology | Description |
 | :--- | :--- |
+| Operation objects | 单独使用或者配合queue使用 |
 | GCD | 封装的task放到queueu中执行 |
 | Idle-time notifications | 适用于低优先级的任务，run loop空闲时会发通知 |
 | Asynchronous functions | 系统创建线程处理任务 |
 | Timers | 非主线程使用时需要runloop |
 | Separate processes |  |
-
-## Alternatives to Threads
 
 ## Threading Support
 
