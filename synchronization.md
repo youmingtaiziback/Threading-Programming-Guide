@@ -33,6 +33,10 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 信号量的一种，和mutex lock的区别是，conditions同时可能允许多个线程执行
 
+#### Perform Selector Routines
+
+每一个perform请求被放进目标线程的run loop，执行时按照进入队列的顺序
+
 ## Synchronization Costs and Performance
 
 ## Thread Safety and Signals
