@@ -26,9 +26,19 @@ performSelector:onThread:withObject:waitUntilDone: 需要线程有runloop，执�
 
 #### Using POSIX Threads
 
+c接口，使用更方便
+
+默认是non-detached thread
+
 #### Using NSObject to Spawn a Thread
 
+`performSelectorInBackground:withObject: `
+
 #### Using POSIX Threads in a Cocoa Application
+
+在framework中用POSIX实现多线程时，Cocoa无法得知什么时候开始使用多线程。解决办法是生成一个NSThread然后立即退出。\[NSThread isMultiThreaded\]
+
+Cocoa的锁和条件对象是对POSIX相关对象的封装
 
 ## Configuring Thread Attributes
 
