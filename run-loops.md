@@ -18,7 +18,7 @@ mode可自定义，利用mode可以过滤一些事件
 | Connection | NSConnectionReplyMode | 开发者基本不用 |
 | Modal | NSModalPanelRunLoopMode |  |
 | Event tracking | NSEventTrackingRunLoopMode |  |
-| Common modes | NSRunLoopCommonModes/kCFRunLoopCommonModes | 是一组可配置modes。 |
+| Common modes | NSRunLoopCommonModes/kCFRunLoopCommonModes | 是一组可配置modes。Cocoa中默认包含default、modal和event tracking modes |
 
 #### Input Sources
 
