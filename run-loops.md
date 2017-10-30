@@ -85,6 +85,8 @@ mode可自定义，利用mode可以过滤一些事件
 
 10. Notify observers that the run loop has exited.
 
+添加一个非port的input source可以立即唤醒runloop，input source可以被立即执行
+
 ## When Would You Use a Run Loop?
 
 ## Using Run Loop Objects
