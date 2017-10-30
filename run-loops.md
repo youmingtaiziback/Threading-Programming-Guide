@@ -14,7 +14,7 @@ mode可自定义，利用mode可以过滤一些事件
 
 | Mode | Name | Description |
 | :--- | :--- | :--- |
-| Default |  |  |
+| Default | NSDefaultRunLoopMode/kCFRunLoopDefaultMode |  |
 | Connection |  |  |
 | Modal |  |  |
 | Event tracking |  |  |
