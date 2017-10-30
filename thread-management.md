@@ -46,7 +46,7 @@ Cocoa的锁和条件对象是对POSIX相关对象的封装
 
 | Technology | Option |
 | :--- | :--- |
-| Cocoa | \[NSThread setStackSize:\] |
+| Cocoa | \[NSThread setStackSize:\]; |
 | POSIX | pthread\_attr\_setstacksize =&gt; pthread\_attr\_t =&gt; pthread\_create |
 | Multiprocessing Services |  |
 
