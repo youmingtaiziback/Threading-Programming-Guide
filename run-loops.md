@@ -117,7 +117,16 @@ run loop如果不添加timer或者input source，运行后会立即退出
 
 #### Starting the Run Loop
 
+无条件启动run loop: 最不建议使用，唯一停止run loop的方法是杀死他，没办法指定mode
+
+以固定时间启动: 时间到了或者有事件发生时run loop结束
+
+以特定mode启动: 与时间启动不冲突，可同时使用
+
 #### Exiting the Run Loop
+
+* 设置时间段：推荐，run loop会正常处理事务，包括发通知
+* 主动停止run loop：CFRunLoopStop，作用同上，可以停止无条件启动的run loop
 
 #### Thread Safety and Run Loop Objects
 
