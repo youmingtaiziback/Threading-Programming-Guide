@@ -38,6 +38,11 @@ mode可自定义，利用mode可以过滤一些事件
 
 #### Run Loop Observers
 
+观察者可监听的事件通知：
+
+* 进入runloop
+* 即将处理timer
+
 #### The Run Loop Sequence of Events
 
 ## When Would You Use a Run Loop?
