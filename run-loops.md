@@ -12,6 +12,14 @@
 
 mode可自定义，利用mode可以过滤一些事件
 
+| Mode | Name | Description |
+| :--- | :--- | :--- |
+| Default |  |  |
+| Connection |  |  |
+| Modal |  |  |
+| Event tracking |  |  |
+| Common modes |  |  |
+
 #### Input Sources
 
 #### Timer Sources
