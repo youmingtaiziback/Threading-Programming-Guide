@@ -51,6 +51,40 @@ mode可自定义，利用mode可以过滤一些事件
 
 #### The Run Loop Sequence of Events
 
+1. Notify observers that the run loop has been entered.
+
+2. Notify observers that any ready timers are about to fire.
+
+3. Notify observers that any input sources that are not port based are about to fire.
+
+4. Fire any non-port-based input sources that are ready to fire.
+
+5. If a port-based input source is ready and waiting to fire, process the event immediately. Go to step 9.
+
+6. Notify observers that the thread is about to sleep.
+
+7. Put the thread to sleep until one of the following events occurs:
+
+   * An event arrives for a port-based input source.
+
+   * A timer fires.
+
+   * The timeout value set for the run loop expires.
+
+   * The run loop is explicitly woken up.
+
+8. Notify observers that the thread just woke up.
+
+9. Process the pending event.
+
+   * If a user-defined timer fired, process the timer event and restart the loop. Go to step 2.
+
+   * If an input source fired, deliver the event.
+
+   * If the run loop was explicitly woken up but has not yet timed out, restart the loop. Go to step 2.
+
+10. Notify observers that the run loop has exited.
+
 ## When Would You Use a Run Loop?
 
 ## Using Run Loop Objects
