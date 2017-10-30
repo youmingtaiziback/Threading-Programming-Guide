@@ -15,7 +15,7 @@ mode可自定义，利用mode可以过滤一些事件
 | Mode | Name | Description |
 | :--- | :--- | :--- |
 | Default | NSDefaultRunLoopMode/kCFRunLoopDefaultMode |  |
-| Connection | NSConnectionReplyMode |  |
+| Connection | NSConnectionReplyMode | 开发者基本不用 |
 | Modal | NSModalPanelRunLoopMode |  |
 | Event tracking | NSEventTrackingRunLoopMode |  |
 | Common modes | NSRunLoopCommonModes/kCFRunLoopCommonModes |  |
