@@ -66,6 +66,12 @@ You can think of joinable threads as akin to child threads
 
 #### Setting the Thread Priority
 
+\[NSThread setThreadPriority:\]
+
+pthread\_setschedparam
+
+最好使用默认的线程优先级
+
 ## Writing Your Thread Entry Routine
 
 ## Terminating a Thread
