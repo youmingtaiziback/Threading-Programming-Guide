@@ -42,6 +42,8 @@ mode可自定义，利用mode可以过滤一些事件
 
 * 进入runloop
 * 即将处理timer
+* 即将处理input source
+* 即将休眠
 
 #### The Run Loop Sequence of Events
 
