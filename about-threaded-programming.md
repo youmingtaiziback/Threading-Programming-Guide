@@ -55,19 +55,15 @@ atomic operations：针对数据，硬件指令支持
 
 线程共享进程空间
 
-Direct messaging
-
-Global variables, shared memory, and objects
-
-Conditions
-
-Run loop sources
-
-Ports and sockets
-
-Message queues（OS X only）
-
-Cocoa distributed objects（OS X only）
+| Mechanism | Description |
+| :--- | :--- |
+| Direct messaging |  |
+| Global variables, shared memory, and objects |  |
+| Conditions |  |
+| Run loop sources |  |
+| Ports and sockets |  |
+| Message queues（OS X only） |  |
+| Cocoa distributed objects（OS X only） |  |
 
 ## Design Tips
 
