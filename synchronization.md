@@ -21,25 +21,23 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 | Lock | Description |
 | :--- | :--- |
 | Mutex | lock是信号量的一种 |
-| Recursive lock | Recursive lock是mutex lock的变体，每一个线程可以多次获得锁。只有当一个线程的锁都被释放时，其他线程才能获得锁，多用于递归 |
+| Recursive lock | 是mutex lock的变体，每一个线程可以多次获得锁。只有当一个线程的锁都被释放时，其他线程才能获得锁，多用于递归 |
 | Read-write lock |  |
 | Distributed lock |  |
 | Spin lock |  |
 | Double-checked lock |  |
 
-	
+```
+Read-write lock（shared-exclusive lock），有线程读数据时不能写，有线程写数据时不能读。只通过POSIX threads支持
 
-	
+Distributed lock，进程级别提供互斥访问，并不直接阻塞进程，在锁忙碌时告知其他进程
 
-	Read-write lock（shared-exclusive lock），有线程读数据时不能写，有线程写数据时不能读。只通过POSIX threads支持
+Spin lock，轮询锁的状态而不直接阻塞线程，系统不提供任何形式的Spin lock
 
-	Distributed lock，进程级别提供互斥访问，并不直接阻塞进程，在锁忙碌时告知其他进程
+Double-checked lock，潜在不安全，不建议使用
 
-	Spin lock，轮询锁的状态而不直接阻塞线程，系统不提供任何形式的Spin lock
-
-	Double-checked lock，潜在不安全，不建议使用
-
-	大多数锁结合了Memory Barriers
+大多数锁结合了Memory Barriers
+```
 
 ## Synchronization Costs and Performance
 
