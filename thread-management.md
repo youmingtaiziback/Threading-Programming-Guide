@@ -84,7 +84,11 @@ ARC：autorelease pool被忽略；MRC：autorelease pool在入口函数最开始
 
 #### Setting Up an Exception Handler
 
+[_Exception Programming Topics_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Exceptions/Exceptions.html#//apple_ref/doc/uid/10000012i)
+
 #### Setting Up a Run Loop
+
+两类线程：有run loop和没有run loop的
 
 ## Terminating a Thread
 
