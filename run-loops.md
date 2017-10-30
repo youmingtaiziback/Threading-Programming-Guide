@@ -47,6 +47,8 @@ mode可自定义，利用mode可以过滤一些事件
 * 被唤醒
 * 退出runloop
 
+观察者可以被单词或重复使用
+
 #### The Run Loop Sequence of Events
 
 ## When Would You Use a Run Loop?
