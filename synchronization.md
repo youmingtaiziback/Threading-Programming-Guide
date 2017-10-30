@@ -22,7 +22,7 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 | :--- | :--- |
 | Mutex | lock是信号量的一种 |
 | Recursive lock | 是mutex lock的变体，每一个线程可以多次获得锁。只有当一个线程的锁都被释放时，其他线程才能获得锁，多用于递归 |
-| Read-write lock |  |
+| Read-write lock | 有线程读数据时不能写，有线程写数据时不能读。只通过POSIX threads支持 |
 | Distributed lock |  |
 | Spin lock |  |
 | Double-checked lock |  |
