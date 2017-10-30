@@ -39,6 +39,10 @@ threads底层实现是Mach threads，POSIX API使用起来更方便
 
 #### Run Loops
 
+run loop监听事件源，事件源来了，系统唤醒线程，把事件分发给run loop。没有事件需要处理时，run loop把线程置为休眠状态器、启动run loop
+
+主线程的run loop由系统创建，创建子线程需要做的是：启动线程、获取run loop、添加事件处理
+
 #### Synchronization Tools
 
 #### Inter-thread Communication
