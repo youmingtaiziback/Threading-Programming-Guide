@@ -89,7 +89,37 @@ mode可自定义，利用mode可以过滤一些事件
 
 ## When Would You Use a Run Loop?
 
+主线程的run loop有系统自动创建
+
+子线程在以下情况下需要使用run loop：
+
+* 用port或者自定义input source和其他线程通信
+* 使用定时器
+* 使用performSelector…
+* 保活周期性处理任务
+
 ## Using Run Loop Objects
+
+#### Getting a Run Loop Object
+
+获取当前线程runloop的方法
+
+* \[Cocoa currentRunLoop\]
+* CFRunLoopGetCurrent
+
+NSRunLoop和CFRunLoopRef之间可相互转换
+
+#### Configuring the Run Loop
+
+run loop如果不添加timer或者input source，运行后会立即退出
+
+添加run loop的observer只能用Core Foundation
+
+#### Starting the Run Loop
+
+#### Exiting the Run Loop
+
+#### Thread Safety and Run Loop Objects
 
 ## Configuring Run Loop Sources
 
