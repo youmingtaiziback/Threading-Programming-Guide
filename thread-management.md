@@ -74,6 +74,18 @@ POSIX: pthread\_setschedparam
 
 ## Writing Your Thread Entry Routine
 
+#### Creating an Autorelease Pool
+
+每个线程至少有一个autorelease pool
+
+ARC：autorelease pool被忽略；MRC：autorelease pool在入口函数最开始生成，最后释放
+
+适当的增加autorelease pool有利于减少内存
+
+#### Setting Up an Exception Handler
+
+#### Setting Up a Run Loop
+
 ## Terminating a Thread
 
 
