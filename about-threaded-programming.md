@@ -67,5 +67,21 @@ atomic operations：针对数据，硬件指令支持
 
 ## Design Tips
 
+#### 避免直接创建线程，使用Operation Objects或者GCD
+
+#### 线程占用一定的内存，使用时尽量保持长时间运行，不用时及时停止
+
+#### 避免共享数据结构
+
+#### 主线程接受事件并更新UI
+
+#### 进程结束时，关键操作应该用non-detached（joinable）线程，在Cocoa app中，也可以用applicationShouldTerminate:
+
+#### 线程不能处理自己的异常的话，进程就会停止。线程不能将自己的异常扔给其他线程处理，但可以通知其他线程。@synchronized指令包含了一个隐士异常处理器
+
+#### 最好的结束线程方式是让线程执行到结尾，否则释放资源的代码可能执行不到，造成内存泄漏
+
+#### 设计库时应该考虑库在多线程环境被调用。NSWillBecomeMultiThreadedNotification
+
 
 
