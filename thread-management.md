@@ -18,11 +18,11 @@ Operation Objects使用了线程池，创建线程要快些
 
 #### Using NSThread
 
-detachNewThreadSelector:toTarget:withObject:、创建NSThread并调用start方法
+`detachNewThreadSelector:toTarget:withObject:`、创建NSThread并调用start方法
 
 当detached thread结束时，系统自动回收他的资源
 
-performSelector:onThread:withObject:waitUntilDone: 需要线程有runloop，执行后立即撤销
+`performSelector:onThread:withObject:waitUntilDone:` 需要线程有runloop，执行后立即撤销
 
 #### Using POSIX Threads
 
@@ -36,7 +36,7 @@ c接口，使用更方便
 
 #### Using POSIX Threads in a Cocoa Application
 
-在framework中用POSIX实现多线程时，Cocoa无法得知什么时候开始使用多线程。解决办法是生成一个NSThread然后立即退出。\[NSThread isMultiThreaded\]
+在framework中用POSIX实现多线程时，Cocoa无法得知什么时候开始使用多线程。解决办法是生成一个NSThread然后立即退出。`[NSThread isMultiThreaded]`
 
 Cocoa的锁和条件对象是对POSIX相关对象的封装
 
@@ -52,9 +52,9 @@ Cocoa的锁和条件对象是对POSIX相关对象的封装
 
 #### Configuring Thread-Local Storage
 
-Cocoa: \[NSThread threadDictionary\]
+Cocoa: `[NSThread threadDictionary]`
 
-POSIX: pthread\_setspecific、pthread\_getspecific
+POSIX: `pthread_setspecific、pthread_getspecific`
 
 #### Setting the Detached State of a Thread
 
@@ -66,9 +66,9 @@ You can think of joinable threads as akin to child threads
 
 #### Setting the Thread Priority
 
-Cocoa: \[NSThread setThreadPriority:\]
+Cocoa: `[NSThread setThreadPriority:]`
 
-POSIX: pthread\_setschedparam
+POSIX: `pthread_setschedparam`
 
 最好使用默认的线程优先级
 
@@ -92,5 +92,5 @@ ARC：autorelease pool被忽略；MRC：autorelease pool在入口函数最开始
 
 ## Terminating a Thread
 
- Cocoa、POSIX和Multiprocessing Services提供了直接杀死线程的接口，但是不建议使用，这样做很可能导致内存泄漏
+Cocoa、POSIX和Multiprocessing Services提供了直接杀死线程的接口，但是不建议使用，这样做很可能导致内存泄漏
 
