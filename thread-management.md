@@ -80,7 +80,7 @@ POSIX: `pthread_setschedparam`
 
 每个线程至少有一个autorelease pool
 
-ARC：autorelease pool被忽略；MRC：autorelease pool在入口函数最开始生成，最后释放
+ARC：多数情况下autorelease pool被忽略；MRC：autorelease pool在入口函数最开始生成，最后释放
 
 适当的增加autorelease pool有利于减少内存
 
