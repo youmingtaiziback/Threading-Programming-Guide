@@ -64,9 +64,7 @@ POSIX: `pthread_setspecific、pthread_getspecific`
 
 POSIX默认创建的是joinable threads
 
-POSIX creates threads as joinable by default
-
-You can think of joinable threads as akin to child threads
+joinable threads在退出时可以把数据或者返回值传递给`pthread_exit`，然后其他线程通过调用`pthread_join`获取数据
 
 #### Setting the Thread Priority
 
