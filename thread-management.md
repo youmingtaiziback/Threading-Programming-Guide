@@ -24,7 +24,7 @@ Operation Objects使用了线程池，创建线程要快些
 
 `performSelector:onThread:withObject:waitUntilDone:` 需要线程有runloop，执行后立即撤销
 
-> `performSelector:onThread:withObject:waitUntilDone: `不适用于实时性较高或者通信频繁的情况
+> `performSelector:onThread:withObject:waitUntilDone:`不适用于实时性较高或者通信频繁的情况
 
 #### Using POSIX Threads
 
@@ -60,7 +60,9 @@ POSIX: `pthread_setspecific、pthread_getspecific`
 
 #### Setting the Detached State of a Thread
 
-Most high-level thread technologies create detached threads by default
+大多数高级线程技术默认创建的是detached threads
+
+POSIX默认创建的是joinable threads
 
 POSIX creates threads as joinable by default
 
