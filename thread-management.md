@@ -22,7 +22,7 @@ Operation Objects使用了线程池，创建线程要快些
 
 当detached thread结束时，系统自动回收他的资源
 
-`performSelector:onThread:withObject:waitUntilDone:` 需要线程有runloop，执行后立即撤销
+`performSelector:onThread:withObject:waitUntilDone:` 需要线程有runloop，立即执行、执行后立即撤销
 
 #### Using POSIX Threads
 
