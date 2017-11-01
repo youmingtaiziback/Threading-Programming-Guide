@@ -56,7 +56,7 @@ Cocoa的锁和条件对象是对POSIX相关对象的封装
 
 Cocoa: `[NSThread threadDictionary]`
 
-POSIX: `pthread_setspecific、pthread_getspecific`
+POSIX: `pthread_setspecific`、`pthread_getspecific`
 
 #### Setting the Detached State of a Thread
 
