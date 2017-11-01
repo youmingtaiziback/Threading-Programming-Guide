@@ -104,8 +104,8 @@ mode可自定义，利用mode可以过滤一些事件
 
 获取当前线程runloop的方法
 
-* \[Cocoa currentRunLoop\]
-* CFRunLoopGetCurrent
+* `[Cocoa currentRunLoop]`
+* `CFRunLoopGetCurrent`
 
 NSRunLoop和CFRunLoopRef之间可相互转换
 
@@ -141,8 +141,6 @@ Cocoa NSRunLoop：非线程安全
 #### Configuring Timer Sources
 
 #### Configuring a Port-Based Input Source
-
-
 
 
 
