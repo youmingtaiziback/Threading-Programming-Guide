@@ -16,7 +16,7 @@ NSOperation和GCD更高效，创建和管理线程仍支持
 
 ## See Also
 
-[_Concurrency Programming Guide_](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091)
+[_Concurrency Programming Guide_](https://youmingtaiziback.gitbooks.io/concurrency-programming-guide/content/)
 
 ## 
 
