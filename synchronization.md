@@ -41,7 +41,7 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 ## Synchronization Costs and Performance
 
-同步确保了代码的正确性，但是付出了性能上的代价。
+同步确保了代码的正确性，但是付出了性能上的代价。同步工具带来了延迟，即使在非竞争情况下也是如此。
 
 ## Thread Safety and Signals
 
