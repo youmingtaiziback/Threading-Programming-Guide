@@ -61,6 +61,8 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 #### Watch Out for Deadlocks and Livelocks
 
+#### Use Volatile Variables Correctly
+
 ## Using Atomic Operations
 
 ## Using Locks
