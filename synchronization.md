@@ -45,6 +45,8 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 ## Thread Safety and Signals
 
+信号是一种底层BSD机制，被用来向一个进程发送信息或者以某种方式操纵它。
+
 ## Tips for Thread-Safe Designs
 
 ## Using Atomic Operations
