@@ -31,6 +31,8 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 #### Conditions
 
+条件是信号量的一种，当特定条件为真时，线程间可以相互通发信号
+
 信号量的一种，和mutex lock的区别是，conditions同时可能允许多个线程执行
 
 #### Perform Selector Routines
