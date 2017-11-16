@@ -33,6 +33,8 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 条件是信号量的一种，当特定条件为真时，线程间可以相互通发信号。条件大多数时候被用来表示资源的可用性或者保证任务按特定顺序执行。和mutex lock的区别是，conditions同时可能允许多个线程访问
 
+条件的一种用法是管理未处理事件池。当队列中有事件时，队列通过条件变量告知等待的线程
+
 #### Perform Selector Routines
 
 每一个perform请求被放进目标线程的run loop，执行时按照进入队列的顺序
