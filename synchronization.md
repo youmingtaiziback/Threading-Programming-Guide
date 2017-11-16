@@ -53,6 +53,8 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 ## Tips for Thread-Safe Designs
 
+### Avoid Synchronization Altogether
+
 ## Using Atomic Operations
 
 ## Using Locks
