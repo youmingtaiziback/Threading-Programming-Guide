@@ -49,6 +49,8 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 
 多线程app中，信号有可能被系统发送给任何线程
 
+不能假设在一个线程上安装了信号处理器就一定会在这个线程上接收到信号
+
 ## Tips for Thread-Safe Designs
 
 ## Using Atomic Operations
