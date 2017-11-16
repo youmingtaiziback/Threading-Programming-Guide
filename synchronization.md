@@ -27,7 +27,7 @@ memory barriers和volatile variables会减少编译器带来的性能优化
 | Spin lock | 轮询锁的状态而不直接阻塞线程，系统不提供任何形式的Spin lock |
 | Double-checked lock | 潜在不安全，不建议使用 |
 
-> 大多数锁结合了Memory Barriers
+> 大多数锁结合了Memory Barriers，保证在进入关键代码之前的读写操作完成
 
 #### Conditions
 
