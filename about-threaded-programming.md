@@ -12,6 +12,10 @@ OS X利用多核处理系统事件，app也可以通过线程利用多核
 
 ## Threading Terminology
 
+* thread：代码的一条执行路径
+* process：运行的可执行文件，可包括多个线程
+* task：需要完成的抽象任务
+
 ## Alternatives to Threads
 
 | Technology | Description |
