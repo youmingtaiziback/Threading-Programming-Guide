@@ -1,6 +1,6 @@
 # About Threaded Programming
 
-OS X利用多核处理系统事件，app也可以通过线程利用多核
+OS X处理系统事件时利用多核，app也可以通过线程利用多核
 
 ## What Are Threads?
 
