@@ -35,6 +35,8 @@ OS X处理系统事件时利用多核，app也可以通过线程利用多核
 
 threads底层实现是Mach threads，POSIX API使用起来更方便
 
+**Table 1-2 **Thread technologies
+
 | Technology | Description |
 | :--- | :--- |
 | Cocoa threads | NSThread、NSObject支持在已有的线程上执行代码 |
