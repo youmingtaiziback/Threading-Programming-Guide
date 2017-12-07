@@ -121,9 +121,15 @@ atomic operations：针对数据，硬件指令支持
 
 有时异常处理器会被自动创建，例如@synchronized
 
-#### 最好的结束线程方式是让线程执行到结尾，否则释放资源的代码可能执行不到，造成内存泄漏
+#### 干净的结束线程
 
-#### 设计库时应该考虑库在多线程环境被调用。NSWillBecomeMultiThreadedNotification
+最好的结束线程方式是让线程执行到结尾，否则释放资源的代码可能执行不到，造成内存泄漏
+
+#### 程序库里面的线程安全
+
+设计库时应该考虑库在多线程环境被调用
+
+[NSWillBecomeMultiThreadedNotification](https://developer.apple.com/documentation/foundation/nswillbecomemultithreadednotification)
 
 
 
