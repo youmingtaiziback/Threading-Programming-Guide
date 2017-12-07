@@ -129,7 +129,5 @@ atomic operations：针对数据，硬件指令支持
 
 设计库时应该考虑库在多线程环境被调用
 
-[NSWillBecomeMultiThreadedNotification](https://developer.apple.com/documentation/foundation/nswillbecomemultithreadednotification)
-
-
+如果想让程序库在app变成多线程时被通知，可以监听[NSWillBecomeMultiThreadedNotification](https://developer.apple.com/documentation/foundation/nswillbecomemultithreadednotification)
 
