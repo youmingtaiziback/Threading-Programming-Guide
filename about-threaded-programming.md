@@ -91,6 +91,10 @@ atomic operations：针对数据，硬件指令支持
 
 使用异步API、Operation Objects或者GCD，使用后两者时，系统会根据实时系统负载调整线程数量。[_Concurrency Programming Guide_](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091)
 
+#### 合理的保持线程忙碌
+
+如果手动创建和管理线程，应合理的保持线程长期存活并高产出。对于大量消耗空闲时间的线程应该及时终止，这样可以节省内存
+
 #### 线程占用一定的内存，使用时尽量保持长时间运行，不用时及时停止
 
 #### 避免共享数据结构
