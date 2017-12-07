@@ -43,6 +43,8 @@ threads底层实现是Mach threads，POSIX API使用起来更方便
 | POSIX threads | C接口、使用方便、灵活可配。[Using POSIX Threads](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/CreatingThreads/CreatingThreads.html#//apple_ref/doc/uid/10000057i-CH15-SW12) |
 | Multiprocessing Services | 只在OS X上支持并且不建议使用 |
 
+线程启动后，在运行、就绪、阻塞三个状态之间切换直到终止状态
+
 线程创建的内存和时间成本相对较高，建议入口函数尽量多做些事情或者通过run loop使任务可以重新开始
 
 #### Run Loops
