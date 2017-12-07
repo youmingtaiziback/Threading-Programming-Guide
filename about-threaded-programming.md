@@ -61,7 +61,7 @@ run loop监听事件源，事件源来了，系统唤醒线程，把事件分发
 
 Locks：使代码在任一时间最多只能被一个线程执行。最常见的是mutex lock，Cocoa提供来了几种mutex lock的变种
 
-conditions
+conditions：保证了app内任务的执行顺序。POSIX和Foundation都提供了对conditions的直接支持
 
 atomic operations：针对数据，硬件指令支持
 
