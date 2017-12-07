@@ -89,7 +89,7 @@ mode可自定义，利用mode可以过滤一些事件
 
 ## When Would You Use a Run Loop?
 
-主线程的run loop有系统自动创建
+主线程的run loop由系统自动创建
 
 子线程在以下情况下需要使用run loop：
 
