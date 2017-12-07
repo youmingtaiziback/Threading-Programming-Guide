@@ -2,6 +2,8 @@
 
 NSOperation和GCD更高效，创建和管理线程仍支持
 
+> 开发新App时，推荐使用其他并发技术，[_Concurrency Programming Guide_](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091)
+
 ## Organization of This Document
 
 [About Threaded Programming](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/AboutThreads/AboutThreads.html#//apple_ref/doc/uid/10000057i-CH6-SW2) 介绍线程的概念和在app设计中的作用
