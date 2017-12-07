@@ -20,7 +20,5 @@ NSOperation和GCD更高效，创建和管理线程仍支持
 
 其他并发技术：[_Concurrency Programming Guide_](https://youmingtaiziback.gitbooks.io/concurrency-programming-guide/content/)
 
-本文只介绍了少量的POSIX threads API，更多信息和用法参考_Programming with POSIX Threads _by David R. Butenhof
-
-
+本文只介绍了少量的POSIX threads API，更多信息和用法参考_\_Programming with POSIX Threads_ \_by David R. Butenhof
 
