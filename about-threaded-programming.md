@@ -65,6 +65,8 @@ conditions：保证了app内任务的执行顺序。POSIX和Foundation都提供�
 
 atomic operations：针对数据，硬件指令支持
 
+[Synchronization Tools](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/ThreadSafety/ThreadSafety.html#//apple_ref/doc/uid/10000057i-CH8-124887)
+
 #### Inter-thread Communication
 
 线程共享进程空间
