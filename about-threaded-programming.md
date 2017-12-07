@@ -105,19 +105,15 @@ atomic operations：针对数据，硬件指令支持
 
 关于绘制的更多信息：[_Cocoa Drawing Guide_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
 
+#### 了解线程退出时的行为
+
+进程结束时，关键操作应该用non-detached（joinable）线程
+
+高层线程技术默认创建的是detached线程，用POSIX API可以创建non-detached线程。创建non-detached线程：[Setting the Detached State of a Thread](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/CreatingThreads/CreatingThreads.html#//apple_ref/doc/uid/10000057i-CH15-SW3)
 
 
 
-
-
-
-
-
-
-
-
-
-#### 进程结束时，关键操作应该用non-detached（joinable）线程，在Cocoa app中，也可以用applicationShouldTerminate:
+#### ，在Cocoa app中，也可以用applicationShouldTerminate:
 
 #### 线程不能处理自己的异常的话，进程就会停止。线程不能将自己的异常扔给其他线程处理，但可以通知其他线程。@synchronized指令包含了一个隐士异常处理器
 
