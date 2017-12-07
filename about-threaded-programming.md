@@ -26,7 +26,7 @@ OS X处理系统事件时利用多核，app也可以通过线程利用多核
 | GCD | 封装的task放到queueu中执行 |
 | Idle-time notifications | 适用于低优先级的任务，向[NSNotificationQueue](https://developer.apple.com/documentation/foundation/nsnotificationqueue)发送一个带有[NSPostWhenIdle](https://developer.apple.com/documentation/foundation/notificationqueue.postingstyle/1418001-whenidle)选项的通知，系统会延迟传播通知直到run loop变的空闲时。[_Notification Programming Topics_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html#//apple_ref/doc/uid/10000043i) |
 | Asynchronous functions | 系统创建线程处理任务 |
-| Timers | 非主线程使用时需要runloop |
+| Timers | 非主线程使用时需要runloop。[Timer Sources](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16-SW21) |
 | Separate processes |  |
 
 ## Threading Support
