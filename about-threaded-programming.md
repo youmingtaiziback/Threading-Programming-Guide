@@ -18,6 +18,8 @@ OS X处理系统事件时利用多核，app也可以通过线程利用多核
 
 ## Alternatives to Threads
 
+下表列出了线程的替代技术和如果高效的利用单一线程
+
 | Technology | Description |
 | :--- | :--- |
 | Operation objects | 单独使用或者配合queue使用 |
