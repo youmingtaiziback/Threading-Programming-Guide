@@ -81,7 +81,7 @@ atomic operations：针对数据，硬件指令支持
 | Run loop sources | Custom run loop source |
 | Ports and sockets | 用run loop source实现port，可以使线程闲时休眠 |
 | Message queues（OS X only） | _Multiprocessing Services Programming Guide_ |
-| Cocoa distributed objects（OS X only） |  |
+| Cocoa distributed objects（OS X only） | 对port-based通信的高层实现，多用于进程间通信。_Distributed Objects Programming Topics_ |
 
 ## Design Tips
 
