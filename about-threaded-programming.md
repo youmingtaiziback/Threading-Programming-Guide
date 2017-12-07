@@ -40,7 +40,7 @@ threads底层实现是Mach threads，POSIX API使用起来更方便
 | Technology | Description |
 | :--- | :--- |
 | Cocoa threads | [NSThread](https://developer.apple.com/documentation/foundation/thread)、[NSObject](https://developer.apple.com/documentation/objectivec/nsobject)支持在已有的线程上执行代码 |
-| POSIX threads | C接口、使用方便、灵活可配 |
+| POSIX threads | C接口、使用方便、灵活可配。[Using POSIX Threads](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/CreatingThreads/CreatingThreads.html#//apple_ref/doc/uid/10000057i-CH15-SW12) |
 | Multiprocessing Services | 只在OS X上支持并且不建议使用 |
 
 线程创建的内存和时间成本相对较高，建议入口函数尽量多做些事情或者通过run loop使任务可以重新开始
