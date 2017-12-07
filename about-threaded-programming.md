@@ -78,7 +78,7 @@ atomic operations：针对数据，硬件指令支持
 | Direct messaging | 被发送到目标线程的selector按照顺序执行，在一个runloop里面执行所有的selector |
 | Global variables, shared memory, and objects | 共享变量快速简单，容易产生线程安全问题，需要同步机制 |
 | Conditions | [Using Conditions](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/ThreadSafety/ThreadSafety.html#//apple_ref/doc/uid/10000057i-CH8-SW4) |
-| Run loop sources |  |
+| Run loop sources | Custom run loop source |
 | Ports and sockets |  |
 | Message queues（OS X only） |  |
 | Cocoa distributed objects（OS X only） |  |
