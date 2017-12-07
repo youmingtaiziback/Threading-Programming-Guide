@@ -71,6 +71,8 @@ atomic operations：针对数据，硬件指令支持
 
 线程共享进程空间
 
+按复杂度递增顺序的线程间通信
+
 | Mechanism | Description |
 | :--- | :--- |
 | Direct messaging |  |
