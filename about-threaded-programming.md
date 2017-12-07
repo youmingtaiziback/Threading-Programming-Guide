@@ -75,7 +75,7 @@ atomic operations：针对数据，硬件指令支持
 
 | Mechanism | Description |
 | :--- | :--- |
-| Direct messaging |  |
+| Direct messaging | 被发送到目标线程的selector按照顺序执行，在一个runloop里面执行所有的selector |
 | Global variables, shared memory, and objects |  |
 | Conditions |  |
 | Run loop sources |  |
