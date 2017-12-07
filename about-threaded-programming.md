@@ -103,7 +103,19 @@ atomic operations：针对数据，硬件指令支持
 
 在主线程接受事件更新UI可以简化管理UI的逻辑
 
-#### 主线程接受事件并更新UI
+关于绘制的更多信息：[_Cocoa Drawing Guide_](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### 进程结束时，关键操作应该用non-detached（joinable）线程，在Cocoa app中，也可以用applicationShouldTerminate:
 
