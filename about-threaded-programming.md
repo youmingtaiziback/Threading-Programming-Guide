@@ -76,7 +76,7 @@ atomic operations：针对数据，硬件指令支持
 | Mechanism | Description |
 | :--- | :--- |
 | Direct messaging | 被发送到目标线程的selector按照顺序执行，在一个runloop里面执行所有的selector |
-| Global variables, shared memory, and objects |  |
+| Global variables, shared memory, and objects | 共享变量快速简单，容易产生线程安全问题，需要同步机制 |
 | Conditions |  |
 | Run loop sources |  |
 | Ports and sockets |  |
